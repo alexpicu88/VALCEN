@@ -1,80 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Sitio Web</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #1a1a1a;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eaeaea;
-      font-size: 0.9rem;
-    }
-    .button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #0070f3;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 1rem;
-    }
-    .button:hover {
-      background-color: #0059c1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALCEN - Mi Sitio Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #a3d9b1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #1a3c34;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style: none;
+            text-align: left;
+            display: inline-block;
+        }
+
+        section ul li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        section a {
+            color: #1a3c34;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Bienvenido a VALCEN</h1>
+        <p>Una página simple y profesional</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Bienvenido a Mi Web</h1>
-    <p>Una página simple y profesional</p>
-  </header>
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Alex Richard Gergely Hunyadi, y esta es mi página personal. Aquí puedes encontrar información sobre mis proyectos, experiencia y cómo contactarme.</p>
+    </section>
 
-  <section>
-    <h2>Sobre mí</h2>
-    <p>
-      ¡Hola! Soy [Tu Nombre], y esta es mi página personal. Aquí puedes encontrar información sobre mis proyectos, experiencia y cómo contactarme.
-    </p>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>🔧 Proyecto 1 - Descripción breve.</li>
+            <li>🌐 Proyecto 2 - Descripción breve.</li>
+            <li>📱 Proyecto 3 - Descripción breve.</li>
+        </ul>
+    </section>
 
-    <a href="mailto:correo@ejemplo.com" class="button">Contáctame</a>
-  </section>
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <p>¿Interesado en colaborar? Escríbeme a <a href="mailto:alexgergely@valcen.com">alexgergely@valcen.com</a> o llámame al <a href="tel:+34643302308">643302308</a>.</p>
+    </section>
 
-  <section>
-    <h2>Proyectos</h2>
-    <ul>
-      <li>🔧 Proyecto 1 - Descripción breve.</li>
-      <li>🌐 Proyecto 2 - Descripción breve.</li>
-      <li>📱 Proyecto 3 - Descripción breve.</li>
-    </ul>
-  </section>
+    <footer>
+        <p>© 2025 Alex Richard Gergely Hunyadi – Todos los derechos reservados</p>
+    </footer>
 
-  <footer>
-    © 2025 Tu Nombre – Todos los derechos reservados
-  </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            alert("¡Bienvenido a VALCEN! Explora mis proyectos y contáctame.");
+        });
+    </script>
 </body>
 </html>
